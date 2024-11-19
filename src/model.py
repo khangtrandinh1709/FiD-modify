@@ -130,6 +130,10 @@ class EncoderWrapper(torch.nn.Module):
     """
     Encoder Wrapper for T5 Wrapper to obtain a Fusion-in-Decoder model.
     """
+    
+    main_input_name = "input_ids"
+    
+    
     def __init__(self, encoder, use_checkpoint=False):
         super().__init__()
 
